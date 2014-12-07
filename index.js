@@ -34,6 +34,11 @@ Color3D.prototype.getVal = function() {
 	return this.hsl.x / 1.72;
 }
 
+Color3D.prototype.getBrightness = function() {
+	// return this.getVal();
+	return (this.rgb.x + this.rgb.y * 2 + this.rgb.z * .5) / 3.5;
+}
+
 Color3D.prototype.setHue = function(val) {
 	val = -val + Math.PI * 1.5;
 	var len = Math.sqrt(Math.pow(this.hsl.y, 2) + Math.pow(this.hsl.z, 2));
