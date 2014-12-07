@@ -1,6 +1,6 @@
 {
   "name": "threejs-color3d",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An extended version of THREE.Color that uses matrices for HSV transforms.",
   "main": "index.js",
   "license": "MIT",
